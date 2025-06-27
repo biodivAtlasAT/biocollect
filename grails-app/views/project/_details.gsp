@@ -3,13 +3,13 @@
     <div class="card">
         <div class="card-body">
             <h4 class="card-title">
-                Project metadata
+                <g:message code="project.details.metadata"/>
                 <span class="float-right">
                     <g:if test="${project.projLifecycleStatus == 'published'}">
-                        <span class="badge badge-success">Published</span>
+                        <span class="badge badge-success"><g:message code="project.details.status.published"/></span>
                     </g:if>
                     <g:elseif test="${project.projLifecycleStatus == 'unpublished'}">
-                        <span class="badge badge-info">Draft</span>
+                        <span class="badge badge-info"><g:message code="project.details.status.draft"/></span>
                     </g:elseif>
                 </span>
             </h4>

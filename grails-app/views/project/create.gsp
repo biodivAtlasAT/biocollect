@@ -56,6 +56,19 @@
 <body>
 <div class="container-fluid validationEngineContainer" id="validation-container">
     <content tag="bannertitle">
+        Linkliste:<br>
+        default locale: ${java.util.Locale.default}<br>
+        aktuell: ${org.springframework.web.servlet.support.RequestContextUtils.getLocale(request)}<br>
+        msg: ${messageSource.getMessage('project.create.register', [].toArray(), '', org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}
+        <% def links = hubConfig.templateConfiguration?.header?.links %>
+        <ul>
+            <g:each in="${links}" var="link">
+                <li>
+                    CT: ${link.contentType}, DN: ${link.displayName}, MSG: ${messageSource.getMessage(link.displayName, [].toArray(), '', org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}
+                </li>
+            </g:each>
+        </ul>
+
         <g:set var="customTitle" value="${hubConfig.templateConfiguration?.header?.links?.find {it.contentType == 'newproject'}?.displayName}"/>
         ${customTitle?:messageSource.getMessage('project.create.register', [].toArray(), '', Locale.default)}
     </content>
