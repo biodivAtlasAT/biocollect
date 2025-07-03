@@ -79,13 +79,13 @@ class TemplateTagLib {
                 case 'static':
                     if (bs4) {
                         if(link.displayName == 'navigation.search' || link.displayName == 'navigation.sites') {
-                            dummy = 'not defined'
+                            def dummy = 'not defined'
                             if (link.displayName == 'navigation.search')
                                 dummy = 'Search'
                             if (link.displayName == 'navigation.sites')
                                 dummy = 'Sites'
                             out << "<li itemscope=\"itemscope\" itemtype=\"https://www.schema.org/SiteNavigationElement\" class=\"menu-item nav-item ${classes}\">";
-                            out << "<a class=\"nav-link\" title=\"${link.displayName}\" href=\"${url}\">${messageSource.getMessage(link.displayName, [].toArray(), dummy, org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}</a>";
+                            out << "<a class=\"nav-link\" title=\"\" href=\"${url}\">${messageSource.getMessage(link.displayName, [].toArray(), dummy, org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}</a>";
                             out << "</li>";
                         } else {
                             out << "<li itemscope=\"itemscope\" itemtype=\"https://www.schema.org/SiteNavigationElement\" class=\"menu-item nav-item ${classes}\">";
@@ -127,7 +127,7 @@ class TemplateTagLib {
                 case 'allrecords':
                     if (bs4) {
                         out << "<li itemscope=\"itemscope\" itemtype=\"https://www.schema.org/SiteNavigationElement\" class=\"menu-item nav-item ${classes}\">";
-                        out << "<a class=\"nav-link\" title=\"${link.displayName?:'All Records'}\" href=\"${url}\">${messageSource.getMessage(link.displayName, [].toArray(), 'All Records', org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}</a>";
+                        out << "<a class=\"nav-link\" title=\"\" href=\"${url}\">${messageSource.getMessage(link.displayName, [].toArray(), 'All Records', org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}</a>";
                         out << "</li>";
 
                     } else {
@@ -186,7 +186,7 @@ class TemplateTagLib {
                 case 'newproject':
                     if (bs4) {
                         out << "<li itemscope=\"itemscope\" itemtype=\"https://www.schema.org/SiteNavigationElement\" class=\"menu-item nav-item ${classes}\">";
-                        out << "<a class=\"nav-link\" title=\"${link.displayName?:'New project'}\" href=\"${url}\">${messageSource.getMessage(link.displayName, [].toArray(), 'New Project', org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}</a>";
+                        out << "<a class=\"nav-link\" title=\"\" href=\"${url}\">${messageSource.getMessage(link.displayName, [].toArray(), 'New Project', org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}</a>";
                         out << "</li>";
                     } else {
                         out << "<li class=\"main-menu ${classes}\">";
@@ -197,7 +197,7 @@ class TemplateTagLib {
                 case 'sites':
                     if (bs4) {
                         out << "<li itemscope=\"itemscope\" itemtype=\"https://www.schema.org/SiteNavigationElement\" class=\"menu-item nav-item ${classes}\">";
-                        out << "<a class=\"nav-link\" title=\"${link.displayName?:'Sites'}\" href=\"${url}\">${messageSource.getMessage(link.displayName, [].toArray(), 'Sites', org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}</a>";
+                        out << "<a class=\"nav-link\" title=\"\" href=\"${url}\">${messageSource.getMessage(link.displayName, [].toArray(), 'Sites', org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))}</a>";
                         out << "</li>";
                     } else {
                         out << "<li class=\"main-menu ${classes}\">";
