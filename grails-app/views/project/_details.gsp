@@ -1047,9 +1047,9 @@
                                type="checkbox" id="termsOfUseAgreement" name="termsOfUseAgreement"
                                data-validation-engine="validate[required]"
                                title="<g:message code="project.details.termsOfUseAgreement.checkboxTip"/>"/>
-                        <label for="termsOfUseAgreement"><span></span> I confirm that have read and accept the <a
+                        <label for="termsOfUseAgreement"><span></span><g:message code="project.details.termsOfUseAgreement.confirmation"/>(<a
                                 href="${grailsApplication.config.termsOfUseUrl}" data-bind="click: clickTermsOfUse"
-                                target="_blank">Terms of Use</a>.</label>
+                                target="_blank"><g:message code="project.details.termsOfUseAgreement"/></a>).</label>
                         </div>
 
                         <p class="mt-3"><g:message code="project.details.termsOfUseAgreement.help"/></p>
