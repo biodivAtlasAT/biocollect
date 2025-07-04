@@ -7,7 +7,7 @@
     <meta name="layout" content="bs4"/>
     <title> <g:message code="g.create"/> | <g:message code="g.project"/> | <g:message code="g.biocollect"/></title>
     <meta name="breadcrumbParent1" content="${createLink(uri: '/'+ hubConfig.urlPath)},Home"/>
-    <meta name="breadcrumb" content="Create Project"/>
+    <meta name="breadcrumb" content="${message(code: 'breadcrumb.project.create')}"/>
     <asset:script type="text/javascript">
     var fcConfig = {
         <g:applyCodec encodeAs="none">

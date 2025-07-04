@@ -238,7 +238,7 @@ class BioActivityController {
     @SSO
     def create(String id) {
         Map model = addActivity(id)
-        model?.title = messageSource.getMessage('record.create.title', [].toArray(), '', Locale.default)
+        model?.title = messageSource.getMessage('record.create.title', [].toArray(), '', org.springframework.web.servlet.support.RequestContextUtils.getLocale(request))
 
         model
     }

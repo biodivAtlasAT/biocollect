@@ -19,7 +19,7 @@
 
             <div class="col-md-8">
                 <select class="form-control"
-                        data-bind="value:transients.kindOfProject, options:transients.availableProjectTypes, optionsText:'name', optionsValue:'value', optionsCaption:'Select...'"
+                        data-bind="value:transients.kindOfProject, options:transients.availableProjectTypes, optionsText:'name', optionsValue:'vallocale.ue', optionsCaption:'Select...'"
                         <g:if test="${params.citizenScience || params.works || params.ecoScience}">disabled</g:if>
                         data-validation-engine="validate[required]"></select>
             </div>
