@@ -350,8 +350,8 @@
         <div class="col-12 col-md-8">
             <g:select id="dataSharingLicense" class="full-width form-control" name="dateSharingLicence"
                       from="${licences}"
-                      optionValue="name" data-bind="value:dataSharingLicense"
-                      noSelection="['': '-Please select the licence-']" optionKey="url"
+                      optionValue="description" data-bind="value:dataSharingLicense"
+                      noSelection="['': g.message(code: 'project.select.license.placeholder')]" optionKey="url"
                       data-validation-engine="validate[required]"/>
             <g:each in="${licences}">
                 <label class="my-1" data-bind="visible: dataSharingLicense() == '${it.url}'"><a href="${it.url}"
