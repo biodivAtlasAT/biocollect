@@ -1,5 +1,5 @@
 <!-- ko stopBinding: true -->
-<h4 class="mt-3 mt-lg-0">Survey settings</h4>
+<h4 class="mt-3 mt-lg-0"><g:message code="survey.settings.title"/>Survey settings</h4>
 
 <p><g:message code="survey.settings.info1"/></p>
 
