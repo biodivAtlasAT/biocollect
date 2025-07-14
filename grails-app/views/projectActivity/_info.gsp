@@ -416,7 +416,7 @@
                     <div class="form-check">
                         <input id="fsah" name="spatialAccuracy" class="form-check-input" type="radio"
                                data-bind="checked: spatialAccuracy"
-                               value="<g:message code="project.survey.info.spatialAccuracy.high.value"/>"
+                               value="high"
                                data-validation-engine="validate[required]">
                         <label for="fsah" class="form-check-label"><g:message
                                 code="facets.spatialAccuracy.high"/></label>
@@ -425,7 +425,7 @@
                     <div class="form-check">
                         <input id="fsam" name="spatialAccuracy" class="form-check-input" type="radio"
                                data-bind="checked: spatialAccuracy"
-                               value="<g:message code="project.survey.info.spatialAccuracy.moderate.value"/>"
+                               value="moderate"
                                data-validation-engine="validate[required]">
                         <label for="fsam" class="form-check-label"><g:message
                                 code="facets.spatialAccuracy.moderate"/></label>
@@ -434,7 +434,7 @@
                     <div class="form-check">
                         <input id="fsal" name="spatialAccuracy" class="form-check-input" type="radio"
                                data-bind="checked: spatialAccuracy"
-                               value="<g:message code="project.survey.info.spatialAccuracy.low.value"/>"
+                               value="low"
                                data-validation-engine="validate[required]">
                         <label for="fsal" class="form-check-label"><g:message
                                 code="facets.spatialAccuracy.low"/></label>
@@ -460,7 +460,7 @@
                     <div class="form-check">
                         <input id="sih" name="speciesIdentification" class="form-check-input" type="radio"
                                data-bind="checked: speciesIdentification"
-                               value="<g:message code="project.survey.info.speciesIdentification.high.value"/>"
+                               value="high"
                                data-validation-engine="validate[required]">
                         <label class="form-check-label" for="sih"><g:message
                                 code="facets.speciesIdentification.high"/></label>
@@ -469,7 +469,7 @@
                     <div class="form-check">
                         <input id="sim" name="speciesIdentification" class="form-check-input" type="radio"
                                data-bind="checked: speciesIdentification"
-                               value="<g:message code="project.survey.info.speciesIdentification.moderate.value"/>"
+                               value="moderate"
                                data-validation-engine="validate[required]">
                         <label class="form-check-label" for="sim"><g:message
                                 code="facets.speciesIdentification.moderate"/></label>
@@ -478,7 +478,7 @@
                     <div class="form-check">
                         <input id="sil" name="speciesIdentification" class="form-check-input" type="radio"
                                data-bind="checked: speciesIdentification"
-                               value="<g:message code="project.survey.info.speciesIdentification.low.value"/>"
+                               value="low"
                                data-validation-engine="validate[required]">
                         <label for="sil" class="form-check-label"><g:message
                                 code="facets.speciesIdentification.low"/></label>
@@ -487,7 +487,7 @@
                     <div class="form-check">
                         <input id="sin" name="speciesIdentification" class="form-check-input" type="radio"
                                data-bind="checked: speciesIdentification"
-                               value="<g:message code="project.survey.info.speciesIdentification.na.value"/>"
+                               value="na"
                                data-validation-engine="validate[required]">
                         <label for="sin" class="form-check-label"><g:message
                                 code="facets.speciesIdentification.na"/></label>
@@ -515,7 +515,7 @@
                     <div class="form-check">
                         <input id="tah" name="temporalAccuracy" class="form-check-input" type="radio"
                                data-bind="checked: temporalAccuracy"
-                               value="<g:message code="project.survey.info.temporalAccuracy.high.value"/>"
+                               value="high"
                                data-validation-engine="validate[required]">
                         <label for="tah" class="form-check-label"><g:message
                                 code="facets.temporalAccuracy.high"/></label>
@@ -524,7 +524,7 @@
                     <div class="form-check">
                         <input id="tam" name="temporalAccuracy" class="form-check-input" type="radio"
                                data-bind="checked: temporalAccuracy"
-                               value="<g:message code="project.survey.info.temporalAccuracy.moderate.value"/>"
+                               value="moderate"
                                data-validation-engine="validate[required]">
                         <label for="tam" class="form-check-label"><g:message
                                 code="facets.temporalAccuracy.moderate"/></label>
@@ -533,7 +533,7 @@
                     <div class="form-check">
                         <input id="tal" name="temporalAccuracy" class="form-check-input" type="radio"
                                data-bind="checked: temporalAccuracy"
-                               value="<g:message code="project.survey.info.temporalAccuracy.low.value"/>"
+                               value="low"
                                data-validation-engine="validate[required]">
                         <label for="tal" class="form-check-label"><g:message
                                 code="facets.temporalAccuracy.low"/></label>
@@ -558,7 +558,7 @@
                     <div class="form-check">
                         <input id="ntah" name="nonTaxonomicAccuracy" class="form-check-input" type="radio"
                                data-bind="checked: nonTaxonomicAccuracy"
-                               value="<g:message code="project.survey.info.nonTaxonomicAccuracy.high.value"/>"
+                               value="high"
                                data-validation-engine="validate[required]">
                         <label for="ntah" class="form-check-label"><g:message
                                 code="facets.nonTaxonomicAccuracy.high"/></label>
@@ -567,7 +567,7 @@
                     <div class="form-check">
                         <input id="ntam" name="nonTaxonomicAccuracy" class="form-check-input" type="radio"
                                data-bind="checked: nonTaxonomicAccuracy"
-                               value="<g:message code="project.survey.info.nonTaxonomicAccuracy.moderate.value"/>"
+                               value="moderate"
                                data-validation-engine="validate[required]">
                         <label for="ntam" class="form-check-label"><g:message
                                 code="facets.nonTaxonomicAccuracy.moderate"/></label>
@@ -576,7 +576,7 @@
                     <div class="form-check">
                         <input id="ntal" name="nonTaxonomicAccuracy" class="form-check-input" type="radio"
                                data-bind="checked: nonTaxonomicAccuracy"
-                               value="<g:message code="project.survey.info.nonTaxonomicAccuracy.low.value"/>"
+                               value="low"
                                data-validation-engine="validate[required]">
                         <label for="ntal" class="form-check-label"><g:message
                                 code="facets.nonTaxonomicAccuracy.low"/></label>
@@ -749,12 +749,11 @@
             <select id="isDataManagementPolicyDocumented" name="isDataManagementPolicyDocumented" class="form-control"
                     data-bind="value: transients.isDataManagementPolicyDocumented"
                     data-validation-engine="validate[required]">
-                <option selected value="">- Please select an option -</option>
-                <option value="<g:message
-                        code="project.survey.info.isDataManagementPolicyDocumented.yes.value"/>"><g:message
+                <option selected value=""><g:message
+                        code="facets.selectbox.select.text"/></option>
+                <option value="yes"><g:message
                         code="facets.isDataManagementPolicyDocumented.yes"/></option>
-                <option value="<g:message
-                        code="project.survey.info.isDataManagementPolicyDocumented.no.value"/>"><g:message
+                <option value="no"><g:message
                         code="facets.isDataManagementPolicyDocumented.no"/></option>
             </select>
         </div>
