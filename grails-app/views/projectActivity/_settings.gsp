@@ -1,9 +1,9 @@
 <!-- ko stopBinding: true -->
 <h4 class="mt-3 mt-lg-0">Survey settings</h4>
 
-<p>Each of your surveys can be configured differently depending on your needs. Project level settings are inherited as the default.</p>
+<p><g:message code="survey.settings.info1"/></p>
 
-<p>Click on tabs to edit settings required. And new surveys to the project as required.</p>
+<p><g:message code="survey.settings.info2"/></p>
 
 <div id="pActivities" >
 
@@ -14,7 +14,7 @@
             <div class="col-12">
                 <div class="btn-space">
                     <!-- ko if: projectActivities().length > 0 -->
-                     <span> <b> Select survey: </b></span>
+                     <span> <b> <g:message code="survey.settings.select.survey.info"/>: </b></span>
                      <div class="btn-group" role="group">
                          <button type="button" class="btn btn-sm btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <!-- ko  foreach: projectActivities -->
@@ -35,11 +35,11 @@
                                 </a>
                             <!-- /ko -->
                           </div>
-                         <a class="btn btn-sm btn-danger" data-bind="click: deleteProjectActivity"> <i class="far fa-trash-alt"></i> Delete</a>
+                         <a class="btn btn-sm btn-danger" data-bind="click: deleteProjectActivity"> <i class="far fa-trash-alt"></i> <g:message code="survey.settings.button.delete"/></a>
                      </div>
                     <!-- /ko -->
 
-                    <a class="btn btn-sm btn-primary-dark" data-bind="click: addProjectActivity"> <i class="fas fa-plus"></i> Add Survey</a>
+                    <a class="btn btn-sm btn-primary-dark" data-bind="click: addProjectActivity"> <i class="fas fa-plus"></i> <g:message code="survey.settings.button.add"/></a>
                 </div>
 
              </div>
@@ -56,12 +56,12 @@
 
                 <ul id="ul-survey-constraint-citizen-science" class="nav nav-pills">
                     <li class="nav-item"><a class="nav-link active" href="#survey-info" id="survey-info-tab" data-toggle="tab">Survey Info</a></li>
-                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-visibility" id="survey-visibility-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}, css:{disabled: !isSurveyInfoFormFilled()}">Visibility</a></li>
-                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-alert" id="survey-alert-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}">Alert</a></li>
-                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-form" id="survey-form-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}">Survey Form</a></li>
-                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-species" id="survey-species-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}">Species</a></li>
-                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-locations" id="survey-locations-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}">Locations</a></li>
-                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-publish" id="survey-publish-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}">Publish</a></li>
+                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-visibility" id="survey-visibility-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}, css:{disabled: !isSurveyInfoFormFilled()}"><g:message code="survey.settings.tab.visibility"/></a></li>
+                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-alert" id="survey-alert-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}"><g:message code="survey.settings.tab.alert"/></a></li>
+                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-form" id="survey-form-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}"><g:message code="survey.settings.tab.form"/></a></li>
+                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-species" id="survey-species-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}"><g:message code="survey.settings.tab.species"/></a></li>
+                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-locations" id="survey-locations-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}"><g:message code="survey.settings.tab.locations"/></a></li>
+                    <li class="nav-item" data-bind="css:{disabled: !isSurveyInfoFormFilled()}"><a class="nav-link" href="#survey-publish" id="survey-publish-tab" data-toggle="tab" data-bind="attr:{'data-toggle': dataToggleVal()}"><g:message code="survey.settings.tab.publish"/></a></li>
                 </ul>
 
                 <div class="tab-content">

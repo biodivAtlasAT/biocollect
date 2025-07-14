@@ -4,7 +4,7 @@
     <!-- ko if: current -->
     <div class="row mt-4">
         <div class="col-12">
-            <h5 class="d-inline">Step 1 of 7 - Describe the survey</h5>
+            <h5 class="d-inline"><g:message code="survey.tab.step1"/></h5>
             <g:render template="/projectActivity/status"/>
         </div>
     </div>
