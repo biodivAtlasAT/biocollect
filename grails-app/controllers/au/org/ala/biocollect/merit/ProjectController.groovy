@@ -291,7 +291,7 @@ class ProjectController {
         Boolean hasLegacyNewsAndEvents = project.newsAndEvents as Boolean
         Boolean hasLegacyProjectStories = project.projectStories as Boolean
 
-        def config = [about:[label:'About', template:'aboutCitizenScienceProject', visible: true, type:'tab', projectSite:project.projectSite, default: true],
+        def config = [about:[label:message(code: 'survey.tab.about.label', default: 'About'), template:'aboutCitizenScienceProject', visible: true, type:'tab', projectSite:project.projectSite, default: true],
          news:[label:'Blog', template:'projectBlog', visible: true, type:'tab', blog:blog, hasNewsAndEvents: hasNewsAndEvents, hasProjectStories:hasProjectStories, hasLegacyNewsAndEvents: hasLegacyNewsAndEvents, hasLegacyProjectStories:hasLegacyProjectStories],
          documents:[label:SettingService.getHubConfig().getTextForResources(grailsApplication.config.content.defaultOverriddenLabels), template:'/shared/listAllDocuments', useExistingModel: true, editable:false, filterBy: 'all', visible: true, containerId:'overviewDocumentList', type:'tab'],
          activities:[label:'Surveys', visible:!project.isExternal, template:'/projectActivity/list', showSites:true, site:project.sites, wordForActivity:'Survey', type:'tab'],
