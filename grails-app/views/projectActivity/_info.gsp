@@ -844,10 +844,12 @@
 
 <div class="row">
     <div class="col-12">
-        <button class="btn-primary-dark btn btn-sm" data-bind="click: saveInfo"><i class="fas fa-hdd"></i> Save
+        <button class="btn-primary-dark btn btn-sm" data-bind="click: saveInfo"><i class="fas fa-hdd"></i> <g:message
+                code="general.button.save"/>
         </button>
         <button class="btn-dark btn btn-sm"
                 data-bind="visible: showInfoNext(), showTabOrRedirect: {url:'', tabId: '#survey-visibility-tab'}"><i
-                class="far fa-arrow-alt-circle-right"></i> Next</button>
+                class="far fa-arrow-alt-circle-right"></i> <g:message
+                code="general.button.next"/></button>
     </div>
 </div>
