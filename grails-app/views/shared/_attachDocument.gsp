@@ -14,7 +14,7 @@
                 <form class="validationContainer" id="documentForm">
 
                     <div class="row form-group">
-                        <label class="col-form-label col-sm-3" for="documentName">Title</label>
+                        <label class="col-form-label col-sm-3" for="documentName"><g:message code="attach.document.title.label"/></label>
 
                         <div class="col-sm-9">
                             <textarea class="form-control" rows="2" id="documentName" type="text" data-bind="value:name"></textarea>
@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="row form-group">
-                        <label class="col-form-label col-sm-3" for="documentDescription">Description</label>
+                        <label class="col-form-label col-sm-3" for="documentDescription"><g:message code="attach.document.description"/></label>
 
                         <div class="col-sm-9">
                             <textarea class="form-control" rows="2" id="documentDescription" type="text" data-bind="value:description"></textarea>
@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="row form-group">
-                        <label class="col-form-label col-sm-3" for="documentAttribution">Attribution</label>
+                        <label class="col-form-label col-sm-3" for="documentAttribution"><g:message code="attach.document.attribution"/></label>
 
                         <div class="col-sm-9">
                             <input class="form-control" id="documentAttribution" type="text" data-bind="value:attribution"/>
@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="row form-group" data-bind="visible:roles.length > 1">
-                        <label class="col-form-label col-sm-3" for="documentRole">Document type</label>
+                        <label class="col-form-label col-sm-3" for="documentRole"><g:message code="attach.document.type"/></label>
 
                         <div class="col-sm-9">
                             <select class="form-control" id="documentRole" data-bind="options:roles, optionsText: 'name', optionsValue: 'id', value:role"></select>
@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="row form-group">
-                        <label class="col-form-label col-sm-3" for="documentDoi">DOI</label>
+                        <label class="col-form-label col-sm-3" for="documentDoi"><g:message code="attach.document.doi"/></label>
 
                         <div class="col-sm-9">
                             <input class="form-control" id="documentDoi" type="text" data-bind="value:doiLink"/>
@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="row form-group">
-                        <label class="col-form-label col-sm-3" for="documentexternalUrl">External Url</label>
+                        <label class="col-form-label col-sm-3" for="documentexternalUrl"><g:message code="attach.document.externalUrl"/></label>
 
                         <div class="col-sm-9">
                             <input class="form-control" id="documentexternalUrl" type="text" data-bind="value:externalUrl"/>
@@ -65,7 +65,7 @@
                     </div>
 
                     <div class="row form-group">
-                        <label class="col-form-label col-sm-3" for="documentCitation">Citation</label>
+                        <label class="col-form-label col-sm-3" for="documentCitation"><g:message code="attach.document.citation"/></label>
 
                         <div class="col-sm-9">
                             <textarea class="form-control" rows="2" id="documentCitation" type="text" data-bind="value:citation"></textarea>
@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="row form-group">
-                        <label class="col-form-label col-sm-3" for="documentKeywords">Keywords</label>
+                        <label class="col-form-label col-sm-3" for="documentKeywords"><g:message code="attach.document.keywords"/></label>
 
                         <div class="col-sm-9">
                             <textarea class="form-control" rows="2" id="documentKeywords" type="text" data-bind="value:labels"></textarea>
@@ -81,7 +81,7 @@
                     </div>
 
                     <div class="row form-group">
-                        <label class="col-form-label col-sm-3" for="documentLicense">License</label>
+                        <label class="col-form-label col-sm-3" for="documentLicense"><g:message code="attach.document.license"/></label>
 
                         <div class="col-sm-9">
                             <input class="form-control" id="documentLicense" type="text" data-bind="value:license"/>
@@ -90,28 +90,28 @@
 
                     <div class="row form-group" data-bind="visible: embeddedVideoVisible()">
                         <label class="col-sm-3" for="embeddedVideo">
-                            Embed video
+                            <g:message code="attach.document.embedVideo"/>
                         </label>
                         <div class="col-sm-9">
-                            <textarea class="form-control w-100" placeholder="Example: <iframe width='560' height='315' src='https://www.youtube.com/embed/j1bR-0XBfcs' frameborder='0' allowfullscreen></iframe> (Allowed host: Youtube, Vimeo, Ted, Wistia.)"
+                            <textarea class="form-control w-100" placeholder="${message(code: 'attach.document.embedVideo.placeholder')}"
                                       data-bind="value: embeddedVideo,  valueUpdate: 'keyup'" rows="3" id="embeddedVideo" type="text">
                             </textarea>
                         </div>
                     </div>
 
                     <div class="row form-group" data-bind="visible:settings.showSettings">
-                        <label class="col-form-label col-sm-3" for="public">Settings</label>
+                        <label class="col-form-label col-sm-3" for="public"><g:message code="attach.document.settings"/></label>
                         <div class="col-sm-9">
                             <div class="form-check">
                                 <input class="form-check-input" id="public" type="checkbox" data-bind="checked:public"/>
-                                <label class="checkbox form-check-label" for="public">make this document public on the project "Resources" tab</label>
+                                <label class="checkbox form-check-label" for="public"><g:message code="attach.document.makePublic"/></label>
                             </div>
                         </div>
 
                     </div>
 
                     <div class="row form-group" data-bind="visible:thirdPartyConsentDeclarationRequired">
-                        <label for="thirdPartyConsentDeclarationMade" class="col-sm-3 col-form-label">Privacy declaration</label>
+                        <label for="thirdPartyConsentDeclarationMade" class="col-sm-3 col-form-label"><g:message code="attach.document.privacyDeclaration"/></label>
                         <div id="thirdPartyConsentDeclarationMade" class="col-sm-9">
                             <div class=" form-check">
                                 <input class="validate[required] form-check-input" id="thirdPartyConsentCheckbox" type="checkbox" name="thirdPartyConsentDeclarationMade" data-bind="checked:thirdPartyConsentDeclarationMade">
@@ -125,14 +125,14 @@
 
                     <div data-bind="visible: !embeddedVideoVisible()">
                         <div class="row form-group">
-                            <label class="col-sm-3 col-form-label" for="documentFile">File</label>
+                            <label class="col-sm-3 col-form-label" for="documentFile"><g:message code="attach.document.file"/></label>
 
                             <div class="col-sm-9">
 
                                 <span class="btn btn-dark fileinput-button">
                                     <i class="fas fa-file-upload"></i>
                                     <input id="documentFile" type="file" name="files"/>
-                                    <span data-bind="text:fileButtonText">Attach file</span>
+                                    <span data-bind="text:fileButtonText"><g:message code="attach.document.attachFile"/></span>
                                 </span>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                         </div>
 
                         <div class="row form-group" data-bind="visible:hasPreview">
-                            <label class="col-form-group col-sm-3">Preview</label>
+                            <label class="col-form-group col-sm-3"><g:message code="attach.document.preview"/></label>
 
                             <div class="col-sm-9">
                                 <div id="preview" class="controls"></div>
@@ -160,7 +160,7 @@
                         </div>
 
                         <div class="row form-group" data-bind="visible:progress() > 0">
-                            <label class="col-form-label col-sm-3" for="progress">Progress</label>
+                            <label class="col-form-label col-sm-3" for="progress"><g:message code="attach.document.progress"/></label>
 
 %{--                            <div class="col-sm-9 progress progress-info active input-large" id="progress"--}%
 %{--                                 data-bind="visible:!error() && progress() <= 100, css:{'progress-info':progress()<100, 'progress-success':complete()}">--}%
@@ -173,7 +173,7 @@
                             </div>
 
                             <div class="col-sm-9" id="successmessage" data-bind="visible:complete()">
-                                <span class="alert alert-success">File successfully uploaded</span>
+                                <span class="alert alert-success"><g:message code="attach.document.fileUploaded"/></span>
                             </div>
 
                             <div class="col-sm-9" id="message" data-bind="visible:error()">
@@ -186,9 +186,9 @@
             </div>
             <div class="modal-footer ">
                 <button type="button" class="btn btn-primary-dark"
-                        data-bind="enable:saveEnabled, click:function () { save(); }, visible:!complete(), attr:{'title':saveHelp}"><i class="fas fa-hdd"></i> Save</button>
-                <button class="btn btn-dark" data-bind="click:cancel, visible:!complete()"><i class="far fa-times-circle"></i> Cancel</button>
-                <button class="btn btn-dark" data-bind="click:close, visible:complete()"><i class="fas fa-times"></i> Close</button>
+                        data-bind="enable:saveEnabled, click:function () { save(); }, visible:!complete(), attr:{'title':saveHelp}"><i class="fas fa-hdd"></i> <g:message code="attach.document.save"/></button>
+                <button class="btn btn-dark" data-bind="click:cancel, visible:!complete()"><i class="far fa-times-circle"></i> <g:message code="attach.document.cancel"/></button>
+                <button class="btn btn-dark" data-bind="click:close, visible:complete()"><i class="fas fa-times"></i> <g:message code="attach.document.close"/></button>
             </div>
 
         </div>
