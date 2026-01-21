@@ -975,6 +975,7 @@ class BioActivityController {
                     siteId           : doc.siteId,
                     name             : doc.projectActivity?.name,
                     activityOwnerName: doc.projectActivity?.activityOwnerName,
+                    // activityOwnerName: "FIXTEXT",
                     embargoed        : doc.projectActivity?.embargoed,
                     embargoUntil     : doc.projectActivity?.embargoUntil,
                     records          : doc.projectActivity?.records,
@@ -989,6 +990,12 @@ class BioActivityController {
             ]
 
             activityService.addAdditionalProperties(additionalPropertyConfig, doc, result)
+
+            /*log.info("Result als JSON: ${result as JSON}")
+            log.info("additionalPropertyConfig als JSON: ${additionalPropertyConfig as JSON}")
+            if (result.containsKey('recordedBy'))
+                result['activityOwnerName'] = result['recordedBy']
+*/
             result
         }
 
